@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Morag Tohami</title>
+	<link rel="stylesheet" href="css/cv.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+		<script>
+			var cur=0;
+			var contents = [
+				"I am <b>driven</b>, <b>motivated</b>, and don't give up easily.",
+				"I'm not afraid of learning new things. This makes me <b>adaptable</b> in changing environments.",
+				"I believe in the power of combined minds. Therefore I'm a good <b>team member</b>.",
+				"A true engineer, I focus on <b>finding solutions</b>.",
+				"And lastly, I have a <b>positive</b> attitude."];
+			var classes = ["drive", "learn", "team", "work", "happy"];
+
+			function changeContent(whereTo){
+				var contentBox = document.getElementById("carouselContent")
+				var carouselElement = document.getElementById("carousel");
+				carouselElement.classList.remove(classes[cur]);
+				//update tracker
+				if (whereTo=="next"){
+					cur = (cur==4) ? 0 : cur+1 ;
+
+				}else if (whereTo=="previous"){
+					cur = (cur==0) ? 4 : cur-1 ;
+				}
+				//Updating Content
+				contentBox.innerHTML = "<p>"+contents[cur]+"</p";
+				//updating background image
+				carouselElement.classList.add(classes[cur]);
+			}
+		</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="#intro" >Start</a>
+			<a href="#bgPhilosophy" >Background</a>
+			<a href="#experience">Experience</a>
+			<a href="#aboutMe">About Me</a>
+			<a href="#getInTouch">Get in Touch</a>
+			<a href="wallOfPride.html">Wall of Pride</a>
+		</nav>
+	</header>
+	<div class="sectionWrapperLvl0" id="intro">
+		<div class="sectionWrapperLvl1">
+			<h1> MORAG TOHAMI</h1>
+			<section class="cols_2  box">
+				<h2 class="rightLean">*Some sentence that captures your attention*</h2>
+			</section>
+			<section class="cols_2">
+				<img src="images/profile.jpg" alt="Profile Picture" class="profile">
+			</section>
+			<a href="#bgPhilosophy"><img src="images/scrollDown.png" alt="scrollDownButton" class="scrollDownButton"></a>
+		</div>
+	</div>
+	<div class="sectionWrapperLvl0" id="bgPhilosophy">
+		<div class="sectionWrapperLvl1">
+			<h2>Background & Philosophy</h2>
+			<section class="cols_3">
+				<p class="center">I recently graduated with an <b>Electrical Engineering</b> degree at the Technion, Israeli Institute of Technology<br>(<a href="http://www.shanghairanking.com/ARWU2018.html">Shanghai ranking - top 100 ARWU</a>)<br><br>
+				My favorite courses were Object Oriented Programming & Design Patterns, Machine Learning, Data Structures & Algorithms and Control Systems</p>
+			</section>
+			<section class="cols_3">
+				<p class="center"><img src="images/heart.png" alt="heart icon" class="heart"><br><br>I have a drive to <b>learn & create</b>. In fact, that's what got me so passionate about <b>Computer Science & Software</b>. I love designing solutions and get much satisfaction from it. Other things I like are:<br>Colors | Piano | My cat Jo | Books | Craft & Design</p>
+			</section>
+			<section class="cols_3" >
+				<p class="center">Good things never come easy, but I enjoy the challenge in the process because I know that <b>hard work pays off</b>. Check out my<br><br><a href="wallOfPride.html"><img src="images/medal.png" alt="medal icon" class="medal"> <b>Wall of Pride</b> <img src="images/medal.png" alt="medal icon" class="medal"></a> <br><br>Oh, it's modest. But with time it'll grow.</p>
+			</section>
+			<a href="#experience"><img src="images/scrollDown.png" alt="scrollDownButton" class="scrollDownButton"></a>
+		</div>
+	</div>
+	<div class="sectionWrapperLvl0" id="experience">
+		<div class="sectionWrapperLvl1">
+			<h2>What I've been up to</h2>
+			<section class="timelineSlot">
+				<img class="timelineIcon" src="images/hagana.png" alt="IDF symbol">
+				<p class="timelineYear">2010-2013</p>
+				<p class="timelineShort">Honorably discharged as an IDF Officer</p>
+				<p class="timelineLong"> Served as commander of a police department within a military police base. Second in command to base commander, and responsible for proper execution of base activities.</p>
+			</section>
+			<section class="timelineSlot">
+				<img class="timelineIcon" src="images/cap.png" alt="Graduation Cap">
+				<p class="timelineYear">2013-2018</p>
+				<p class="timelineShort">B.Sc. in Electrical Engineering</p>
+				<p class="timelineLong">Completed my education and graduated as an Electrical Engineer.</p>
+			</section>
+			<section class="timelineSlot">
+				<img class="timelineIcon" src="images/IntelLogo.png" alt="Intel Corporation logo">
+				<p class="timelineYear">2015-2018</p>
+				<p class="timelineShort">Logic Designer, Intel Corporation</p>
+				<p class="timelineLong">Ownership of a block within the chip, which included block level design & maintenance in collaboration with the chip’s architect, using advanced tools and resolving logical puzzles on an everyday basis. Block level verification & debug.</p>
+			</section>
+			<section class="timelineSlot">
+				<img class="timelineIcon" src="images/IntelLogo.png" alt="Intel Corporation logo">
+				<p class="timelineYear">2015-2018</p>
+				<p class="timelineShort">Proprietary Intel Memory Management Tool Owner</p>
+				<p class="timelineLong">Owner of an Intel proprietary tool, which was used by various groups in intel worldwide. The role involved: Tool updates, enhancements, fixes, maintenance and delivery to the various groups on regular basis. as well as training preparation & instruction sessions for top level tool users in those groups.</p>
+			</section>
+			<section class="timelineSlot">
+				<img class="timelineIcon" src="images/roadsigns.png" alt="Where to go">
+				<p class="timelineYear">Now</p>
+				<p class="timelineShort"></p>
+				<p class="timelineLong">Looking for my next challenge.</p>
+			</section>
+			<img src="images/line.png" class="timeline"> 
+			<a href="#aboutMe"><img src="images/scrollDown.png" alt="scrollDownButton" class="scrollDownButton"></a>
+		</div>	
+	</div>
+	<div class="sectionWrapperLvl0" id="aboutMe">
+		<div class="sectionWrapperLvl1">
+			<h2>So how can I contribute to your team?</h2>
+				<h3>Here are some things you might want to know about me</h3>
+				<div class="carousel drive" id="carousel">
+					<section id="prevButton">
+						<img src="images/previous.png" onclick="changeContent('previous')" alt="go to previous content button" class="left">
+					</section>
+					<section id="carouselContent">
+						<p>I am <b>driven</b>, <b>motivated</b>, and don't give up easily.</p>
+					</section>
+					<section id="nextButton">
+						<img src="images/next.png" onclick="changeContent('next')" alt="go to next content button" class="right">
+					</section>
+				</div>
+				<a href="#getInTouch"><img src="images/scrollDown.png" alt="scrollDownButton" class="scrollDownButton"></a>
+		</div>	
+	</div>
+	<div class="sectionWrapperLvl0" id="getInTouch">
+		<div class="sectionWrapperLvl1">
+			<h2>Get in Touch</h2>
+			<section class="cols_3">
+				<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+				<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="morag-tohami"><a class="LI-simple-link" href='https://www.linkedin.com/in/morag-tohami?trk=profile-badge'>Morag Tohami</a></div>
+			</section>
+			<section class="cols_3">
+				<p>E-Mail: <b>Morag.T.Kermani@gmail.com</b></p>
+				<p>Phone #: <b>(972) 741 - 3486</b></p>
+			</section>
+			<section>
+				<p><br><br>This site was created by <b>Morag Tohami</b> using <b>HTML5</b>, <b>CSS</b> & <b>Javascript</b></p>
+			</section>
+		</div>	
+	</div>
+	<div class="sectionWrapperLvl0">
+		<div class="sectionWrapperLvl1">
+		</div>	
+	</div>
+</body>
+</html>
