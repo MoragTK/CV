@@ -182,40 +182,38 @@ img.scrollDownButton{
 	vertical-align: middle;
 }
 #carousel.drive{
-	background: linear-gradient(#FFFFFFFF, #FFFFFF99, #FFFFFFFF) , url("../images/drive.jpg");
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/drive.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 100%;
 
 }
 #carousel.learn{
-	background: linear-gradient(#FFFFFFFF, #FFFFFFBB, #FFFFFFFF) , url("../images/learn.jpg");
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/learn.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #carousel.team{
-	background: linear-gradient(#FFFFFFFF, #FFFFFFBB, #FFFFFFFF) , url("../images/teamwork.jpg");
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/teamwork.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 #carousel.work{
-	background: linear-gradient(#FFFFFFFF, #FFFFFFBB, #FFFFFFFF) , url("../images/work.jpg");
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/work.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 
 }
 #carousel.happy{
-	background: linear-gradient(#FFFFFFFF, #FFFFFFBB, #FFFFFFFF) , url("../images/happy.jpg"); 
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/happy.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 100% 100%;
 
 }
 
-
-
 #getInTouch .sectionWrapperLvl1{
-	background: linear-gradient(#FFFFFFFF, #FFFFFFBB, #FFFFFFFF) , url("../images/orangeDesktop.jpg");
+	background: linear-gradient(#FFFFFFFF, #FFFFFF66, #FFFFFFFF) , url("../images/orangeDesktop.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -225,13 +223,13 @@ section.cols_2{
 	display: inline-block;
 	width: 30%;
 	margin: 0% 5% 0% 5%;
+	vertical-align: top;
 }
 section.cols_3{
 	display: inline-block;
 	width: 25%;
 	margin: 2% 2% 2% 2%;
 	vertical-align: top;
-	text-align: center;
 }
 
 .carousel section{
@@ -254,7 +252,7 @@ section.cols_3{
 	width: 80%;
 	padding: 10% 0% 10% 0%;
 	border: solid 8px #555555;
-	background-image: linear-gradient(#FFFFFF77, #FFFFFF77)
+	background-image: linear-gradient(#FFFFFF88, #FFFFFF88);
 }
 
 #carouselContent p{
@@ -359,7 +357,7 @@ h4{
 }
 
 p{
-	display: inline-block;
+	display: block;
 	font-size: 140%;
 	text-shadow: none;
 	line-height: 140%;
@@ -395,6 +393,9 @@ b{
 .leftLean{
 	text-align: left;
 }
+.bottomLean{
+	vertical-align: bottom;
+}
 
 section.timelineSlot{
 	display: inline-block;
@@ -408,14 +409,21 @@ img.timeline{
 	display: block;
 	width: 100%;	
 	margin: 0 auto;
+	padding-bottom: 2%;
 }
 
 img.timelineIcon{
 	display: block;
 	width: 30%;
 	margin: 0 auto;
-	padding: 0% 0% 10% 0%;
+	padding: 5% 0% 5% 0%;
 }
+
+img.timelineArrows{
+	display: inline-block;
+	width: 10%;
+}
+
 p.timelineYear, p.timelineShort, p.timelineLong{
 	text-align: center;
 }
@@ -436,20 +444,117 @@ p.timelineShort{
 	font-weight: bold;
 }
 
+
+
 iframe{
 	display: inline-block;
 	width: 100%;
 }
-/*
+
+@media screen and (max-width: 1500px){
+	a:visited, nav a:link{
+		font-size: 100%;
+	}
+	h1{
+		font-size: 180%;
+	}
+	h2{
+		font-size: 140%;
+	}
+	h3{
+		font-size: 120%;
+	}
+	h4{
+		font-size: 80%;
+	}
+	p{
+		font-size: 100%;
+	}
+	p.timelineYear{
+		font-size: 140%;
+		line-height: 180%;
+	}
+	section.timelineSlot{
+		width: 28%;
+		padding: 1% 2% 1% 2%;
+	}
+	img.timelineIcon{
+		width: 20%;
+	}
+	#carouselContent p{
+		display: inline-block;
+		width: 50%;
+		font-size: 120%;
+		text-align: center;
+	}
+	div.certificateText{
+		font-size: 90%;
+	}
+	img.scrollDownButton{
+		width: 5%;
+	}
+}
+
+
 @media screen and (max-width: 800px){
 	a:visited, nav a:link{
 		font-size: 80%;
 	}
-}
-
-@media screen and (max-width: 300px){
-	a:visited, nav a:link{
-		font-size: 60%;
+	h1{
+		font-size: 180%;
 	}
-}*/
+	h2{
+		font-size: 140%;
+	}
+	h3{
+		font-size: 120%;
+	}
+	h4{
+		font-size: 80%;
+	}
+	p{
+		font-size: 100%;
+	}
+	p.timelineYear{
+		font-size: 140%;
+		line-height: 180%;
+	}
+	section.timelineSlot{
+		width: 60%;
+		padding: 1% 2% 1% 2%;
+	}
+	img.timelineIcon{
+		width: 15%;
+	}
+	img.timelineArrows{
+		padding-bottom: 5%;
+	}
+	img.notLastTimeline{
+		display: block;
+	}
+	#carouselContent p{
+		display: inline-block;
+		width: 50%;
+		font-size: 120%;
+		text-align: center;
+	}
+	div.certificateText{
+		font-size: 90%;
+	}
+	section.cols_2{
+		display: inline-block;
+		width: 80%;
+		margin: 0% 5% 0% 5%;
+		vertical-align: top;
+	}
+	section.cols_3{
+		display: inline-block;
+		width: 80%;
+		margin: 2% 2% 2% 2%;
+		vertical-align: top;
+	}
+	img.scrollDownButton{
+		width: 7%;
+	}
+}
 

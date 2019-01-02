@@ -25,7 +25,7 @@
 		<div class="sectionWrapperLvl1" >
 			<h2>Final Project (Electrical Engineering Degree)</h2>
 			<h3>Machine Learning & Control in Dynamic Systems</h3>
-			<section class="cols_3">
+			<section class="cols_3 leftLean">
 				<h4>The Problem</h4>
 				<p>We start with a rectangular 2D surface. In the center, there is a robotic arm with 2 joints. Each joint allows movement of 360 degrees in both directions. 
 				Additionaly, a ball spawns in a random location on the surface.</p>
@@ -35,10 +35,10 @@
 			<section class="cols_3">
 				<figure>
 					<iframe width="520" height="300" src="https://www.youtube.com/embed/Pqnjkd57yPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<figcaption>The ball respawns every 30 seconds.<br>In the top-left graph, you can see the planned routes as the algorithm calculates them with every step.</figcaption>
+					<figcaption class="leftLean">The ball respawns every 30 seconds.<br>In the top-left graph, you can see the planned routes as the algorithm calculates them with every step.</figcaption>
 				</figure>
 			</section>
-			<section class="cols_3">
+			<section class="cols_3 leftLean">
 				<h4>The Solution</h4>
 				<p>First, in order to build a control system (<abbr title="A control system is a system that controls ANOTHER system, by regulating the inputs that go into it. For example, let's think of a car. A car has inputs such as an accelerator, breaks, and a steering wheel. It also has external uncontrollable inputs such as wind, the slope of the road, etc, which affect the speed and direction of the car. So, if the desired behavior is a 50mph speed, the driver takes into acount the slope, wind, and the current speed of the car, and with some intuitive calculation, decides how hard to push on the accelerator/break pedals and what to do with the steering wheel.The driver, then, is in fact a control system, because they analyze the dynamics, and regulate the car's controllable inputs to achieve a desired behavior. That's one example.">What is a control system?</abbr>), we had to acheive knowledge of the <abbr title="To simplify - we didn't know how the inputs to the robot arm affected its movement.">system's dynamics</abbr>. Since that model was not known to us, we used an <abbr title="Artificial Neural Network">ANN</abbr> to learn it. The ANN learned the model and emulated it for us which allowed us to analyze the dynamics, and apply control system algorithms on the robotic system (That included <abbr title="Receding Horizon Control">RHC</abbr> and <abbr title="Iterative Linear Quadratic Regulator">ILQR</abbr> ) to achieve the desired result - get the tip of the robotic arm to stabilize on the ball.</p>
 			</section>
