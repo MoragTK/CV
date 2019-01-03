@@ -599,7 +599,7 @@ iframe{
 	}
 	.topnav {
 		overflow: hidden;
-		background-color: #999999;
+		background-color: #000000BB;
 		position: relative;
 	}
 
@@ -618,7 +618,7 @@ iframe{
 		padding-left: 5%;
 		text-align: left;
 		line-height: 250%;
-		color: #222222;
+		color: #FFFFFF;
 	}
 
 	/* Style the hamburger menu */
@@ -634,6 +634,7 @@ iframe{
 	.topnav a:hover {
 		background-color: #FFFFFF;
 		color: #333333;
+		font-weight: bolder;
 	}
 
 	/* Style the active link (or home/logo) */

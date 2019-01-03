@@ -5,12 +5,22 @@
 	<link rel="stylesheet" href="css/cv.css">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript">
+		function hideShowMenu() {
+			  var x = document.getElementById("myLinks");
+			  if (x.style.display === "block") {
+			    x.style.display = "none";
+			  } else {
+			    x.style.display = "block";
+			  }
+		}
+	</script>
 </head>
 <body>
 	<header>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<div class="topnav">
-				<a href="#start" class="active" id="homeLinkNarrowScreen">Start</a>
+				<a href="#start" class="active" id="homeLinkNarrowScreen">Home</a>
 					<div id="myLinks">
 						<a href="index.html">Back to Main Page</a>
 						<a href="#finalProject" >OpenAI Project</a>
