@@ -32,18 +32,34 @@
 				//updating background image
 				carouselElement.classList.add(classes[cur]);
 			}
+
+			function hideShowMenu() {
+				  var x = document.getElementById("myLinks");
+				  if (x.style.display === "block") {
+				    x.style.display = "none";
+				  } else {
+				    x.style.display = "block";
+				  }
+			}
 		</script>
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="#intro" >Start</a>
-			<a href="#bgPhilosophy" >Background</a>
-			<a href="#experience">Experience</a>
-			<a href="#aboutMe">About Me</a>
-			<a href="#getInTouch">Get in Touch</a>
-			<a href="wallOfPride.html">Wall of Pride</a>
-		</nav>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="topnav">
+		  <a href="#intro" class="active" id="homeLinkNarrowScreen">Start</a>
+		  <div id="myLinks">
+		  	<a href="#intro" id="homeLinkWideScreen">Start</a>
+			<a href="#bgPhilosophy"">Background</a>
+			<a href="#experience"">Experience</a>
+			<a href="#aboutMe"">About Me</a>
+			<a href="#getInTouch"">Get in Touch</a>
+			<a href="wallOfPride.html"">Wall of Pride</a>
+		  </div>
+		  <a href="javascript:void(0);" class="icon" id="burger" onclick="hideShowMenu()">
+		    <i class="fa fa-bars"></i>
+		  </a>
+		</div> 
 	</header>
 	<div class="sectionWrapperLvl0" id="intro">
 		<div class="sectionWrapperLvl1">
@@ -143,13 +159,11 @@
 			<section class="cols_2 ">
 				<pclass="center"><br>E-Mail: <b>Morag.T.Kermani@gmail.com</b><br><br>Phone #: <b>(972) 741 - 3486</b></p>
 			</section>
-			<section >
-				<p class="center"><br><br><br>This site was created by <b>Morag Tohami</b> using <b>HTML5</b>, <b>CSS</b> & <b>Javascript</b></p>
-			</section>
 		</div>	
 	</div>
 	<div class="sectionWrapperLvl0">
 		<div class="sectionWrapperLvl1">
+			<p class="center" ><br><br><br>This site was created by <b>Morag Tohami</b> using <b>HTML5</b>, <b>CSS</b> & <b>Javascript</b></p>
 		</div>	
 	</div>
 </body>
