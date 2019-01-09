@@ -468,6 +468,7 @@ iframe{
 .pcView {
 	display: inline-block;
 	text-align: left;
+	margin-bottom: 5%;
 }
 
 .mobileView{
@@ -713,6 +714,7 @@ iframe{
 	}
 	.mobileView{
 		display: inline-block;
+		margin-bottom: 5%;
 	}
 }
 
