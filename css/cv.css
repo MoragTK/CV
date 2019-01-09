@@ -465,6 +465,15 @@ iframe{
 	width: 100%;
 }
 
+.pcView {
+	display: inline-block;
+	text-align: left;
+}
+
+.mobileView{
+	display: none;
+}
+
 @media screen and (max-width: 1500px){
 
 	.topnav a {
@@ -698,6 +707,12 @@ iframe{
 	}
 	img.scrollDownButton{
 		width: 7%;
+	}
+	.pcView {
+		display: none;
+	}
+	.mobileView{
+		display: inline-block;
 	}
 }
 
