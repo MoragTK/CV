@@ -412,7 +412,9 @@ b{
 .bottomLean{
 	vertical-align: bottom;
 }
-
+.midLean{
+	vertical-align: middle;
+}
 section.timelineSlot{
 	display: inline-block;
 	width: 14%;
